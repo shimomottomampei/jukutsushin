@@ -1,0 +1,38 @@
+.search {
+	width: 60%;
+	padding: 3px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+
+	@include media(tb) {
+		width: 80%;
+	}
+
+	#s {
+		border-radius: 20px;
+		box-sizing: border-box;
+		height: 33px;
+		line-height: 33px;
+		width: 90%;
+		margin-right: 5px;
+		border: 0px;
+		padding: 10px;
+		font-size: 14px;
+		@include media(sm) {
+			height: 25px;
+			font-size: 12px;
+			line-height: 25px;
+		}
+	}
+
+	#searchsubmit {
+		height: 33px;
+		@include media(sm) {
+			height: 25px;
+		}
+	
+	}
+
+}

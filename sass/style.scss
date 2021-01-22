@@ -1,0 +1,35 @@
+// 基本設計はBEM設計(吉本式？)
+//
+// 超絶参考にしたサイト
+// https://tsudoi.org/guide/detail/1.html
+
+@import './base/reset';
+@import './base/base';
+@import './base/variable';
+
+
+@import './mixin/border';
+@import './mixin/media';
+@import './mixin/posts';
+@import './mixin/column';
+
+
+@import './setting/config';
+@import './setting/function';
+
+
+@import './module/header';
+@import './module/footer';
+@import './module/ryucat';
+@import './module/hot';
+@import './module/search';
+@import './module/key';
+@import './module/fnav';
+@import './module/related';
+@import './module/pagenation';
+@import './module/audio';
+@import './module/comments';
+
+
+
+

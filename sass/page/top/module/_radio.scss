@@ -1,0 +1,46 @@
+.radio {
+
+h2 {
+	@include border();
+	color: $orange;
+}
+
+.posts {
+	@include posts();
+	@include radio();
+	width: 100%;
+	color: #FFF;
+
+	&__posts {
+		margin: 30px 0;
+
+		@include mediadown(tb) {
+			margin: 30px auto 0;
+		}		
+	}
+}
+
+.post__actor {
+	color: #333;
+}
+
+.btn {
+	display: block;
+	width: 60%;
+	background: $orange;
+	margin: 0 auto 50px;
+	padding: 15px 80px;
+	border-radius: 10px;
+	color: #fff;
+	letter-spacing: 2px;
+	text-align: center;
+	font-weight: 600;
+	font-size: 19px;
+	text-decoration: none;
+	@include mediadown(sm) {
+		padding: 15px 60px;
+		line-height: 1.5;
+	}		
+}
+
+}

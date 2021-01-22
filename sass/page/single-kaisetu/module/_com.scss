@@ -1,0 +1,18 @@
+.com {
+	@include container();
+
+	&__title {
+		@include border();
+		margin-bottom: 15px;
+		font-size: 23px;
+	}
+
+	.comment-author.vcard {
+		display: none;
+	}
+
+	&__area {
+		width: 100%;
+	}
+
+}

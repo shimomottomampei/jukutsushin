@@ -1,0 +1,90 @@
+.posts {
+	@include posts();
+
+	margin-bottom: 100px;
+
+/* 	&__posts::before{
+		content: "";
+		display: block;
+		width: 23%;
+		order: 1;
+		@include media(tb) {
+			display: none;
+		}
+	}
+	&__posts::after{
+		content: "";
+		display: block;
+		width: 23%;
+		@include media(tb) {
+			display: none;
+		}
+	}
+ */
+	&__content {
+		margin-bottom: 30px;
+	}
+
+	&__title {
+		width: 100%;
+
+		@include media(tb) {
+			width: 100%;
+		}
+	}
+
+	h1 {
+//		@include border();
+		color: $orange;
+		text-align: center;
+		font-size: 30px;
+	}
+
+	.posts__content {
+		border-bottom: dashed 1.5px;
+		padding-bottom: 0.5em;
+		.posts__entry-title {
+			a {
+				&:hover {
+					color: $orange;
+				}
+			}
+		}
+		span {
+			&.cat {
+				margin-right: 0.4em;
+				a {
+					color: #fff;
+					padding: 0 7px;
+				}
+			}
+			&.japanese {
+				background-color: #AB80AC;
+			}
+			&.english {
+				background-color: #7CB687;
+			}
+			&.math {
+				background-color: #6DD1F6;
+			}
+			&.mind {
+				background-color: #EA705E;
+			}
+			&.social {
+				background-color: #F28ADC;
+			}
+			&.science {
+				background-color: #98CE37;
+			}
+			&.habit {
+				background-color: #F72777;
+			}
+		}
+	}
+}
+
+.archive-kaisetu .posts {
+	@include posts();
+
+}
+

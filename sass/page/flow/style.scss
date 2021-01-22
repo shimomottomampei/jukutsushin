@@ -1,0 +1,151 @@
+@import '../../mixin/mixin';
+
+@mixin small() {
+	width: 33%;
+	color: $orange;
+	font-size: 13px;
+}
+
+
+#p380 {
+
+	.flex {
+		display: flex;
+		text-align: center;
+		@include mediaQuery-down(tb) {
+			display: block;
+		}
+	}
+
+	.video {
+		@include video();
+		width: 550px;
+		padding-top: 30%;
+		flex-shrink: 0;
+		max-width: 100%;
+		@include mediaQuery-down(md) {
+			padding-top: 56.25%;
+			margin-bottom: 2rem;
+		}
+	}
+
+
+	.article {
+		max-width: 1000px;
+
+		img {
+			height: auto;
+		}
+	}
+
+	.step1 img {
+		width: 150px;
+		@include mediaQuery-down(tb) {
+			display: block;
+			margin: 0 auto;
+			&.wp-image-391 {
+				box-shadow: 3px 3px 4px 0px grey;
+			}
+		}
+	}
+
+	.step2{ 
+		@include mediaQuery-down(md) {
+			display: block;
+			.video {
+				width: 100%;
+			}
+		}
+		.flex {
+			justify-content: space-between;
+			.flex-part {
+				@include small();
+				@include mediaQuery-down(tb) {
+					width: 50%;
+					margin: 1.5rem auto 0;
+					font-size: 1rem;
+				}
+				
+				div {
+					width: 100%;
+					margin-top: -1em;
+					font-size: 1rem;
+					line-height: 1.5;
+				}	
+			}
+		}
+	}
+
+	.step3 {
+		@include mediaQuery-down(md) {
+			display: block;
+			.video {
+				width: 100%;
+			}
+		}
+		div {
+			//flex-grow: 1;
+			div span {
+				@include small();
+				}
+		}
+		img {
+			// width: 150px;
+			width: 33%;
+		}
+		.right {
+			flex-grow: 1;
+			.right-part {
+				color: #e55608;
+				@include mediaQuery-down(tb) {
+					width: 50%;
+					margin: 0 auto;
+					img {
+						width: 100%;
+					}
+				}
+				div {
+					width: 100%;
+					margin-top: -1em;
+					font-size: 1rem;	
+				}	
+			}
+		}
+	}
+
+	.step5 {
+		justify-content: space-around;
+
+		.orange {
+			color: $orange;
+			font-size: 19px;
+			font-weight: 700;
+		}
+
+		img {
+			width: 170px;
+		}
+		div {
+			p {
+				margin-bottom: 0;
+			}
+			@include mediaQuery-down(tb) {
+				p {
+					line-height: 1.5;
+				}
+				margin-bottom: 2rem;
+			}
+		}
+	}
+
+	h2 {
+		margin: 40px 0 15px;
+	}
+
+	h4 {
+		background: $orange;
+		color: #fff;
+		padding: 4px 10px;
+		margin: 0 0 15px;
+	}
+}

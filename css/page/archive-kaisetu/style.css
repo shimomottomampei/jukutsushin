@@ -1,0 +1,184 @@
+.posts {
+  margin-bottom: 100px;
+  /* 	&__posts::before{
+  		content: "";
+  		display: block;
+  		width: 23%;
+  		order: 1;
+  		@include media(tb) {
+  			display: none;
+  		}
+  	}
+  	&__posts::after{
+  		content: "";
+  		display: block;
+  		width: 23%;
+  		@include media(tb) {
+  			display: none;
+  		}
+  	}
+   */ }
+  .posts__posts {
+    display: flex;
+    max-width: 780px;
+    width: 90%;
+    margin: 30px auto 0;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+  .posts__content {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center; }
+    @media (max-width: 768px) {
+      .posts__content {
+        display: block;
+        margin-bottom: 50px; } }
+  .posts__thumb-link {
+    width: 25%;
+    margin-right: 30px;
+    display: block;
+    color: #555;
+    text-decoration: none;
+    cursor: pointer; }
+    .posts__thumb-link img {
+      border-radius: 2px 2px 0 0;
+      width: 100%; }
+  .posts a {
+    text-decoration: none;
+    color: #333; }
+    @media (max-width: 1024px) {
+      .posts a {
+        font-size: 90%; } }
+    @media (max-width: 768px) {
+      .posts a {
+        font-size: 100%; } }
+    @media (max-width: 768px) {
+      .posts a {
+        width: 100%; } }
+  .posts__cat {
+    display: inline-block;
+    background: #595757;
+    overflow: hidden;
+    position: absolute;
+    top: 13px;
+    left: 0;
+    height: 30px;
+    margin: 0;
+    padding: 0 10px;
+    font-size: 15px;
+    font-weight: bold;
+    vertical-align: middle;
+    line-height: 30px;
+    opacity: .9; }
+    @media (max-width: 480px) {
+      .posts__cat {
+        font-size: 13px; } }
+    .posts__cat a {
+      color: #fff; }
+  .posts__entry-title {
+    font-size: 20px; }
+    @media (max-width: 768px) {
+      .posts__entry-title {
+        font-size: 18px; } }
+  .posts__content {
+    margin-bottom: 30px; }
+  .posts__title {
+    width: 100%; }
+    @media (max-width: 768px) {
+      .posts__title {
+        width: 100%; } }
+  .posts h1 {
+    color: #e55608;
+    text-align: center;
+    font-size: 30px; }
+  .posts .posts__content {
+    border-bottom: dashed 1.5px;
+    padding-bottom: 0.5em; }
+    .posts .posts__content .posts__entry-title a:hover {
+      color: #e55608; }
+    .posts .posts__content span.cat {
+      margin-right: 0.4em; }
+      .posts .posts__content span.cat a {
+        color: #fff;
+        padding: 0 7px; }
+    .posts .posts__content span.japanese {
+      background-color: #AB80AC; }
+    .posts .posts__content span.english {
+      background-color: #7CB687; }
+    .posts .posts__content span.math {
+      background-color: #6DD1F6; }
+    .posts .posts__content span.mind {
+      background-color: #EA705E; }
+    .posts .posts__content span.social {
+      background-color: #F28ADC; }
+    .posts .posts__content span.science {
+      background-color: #98CE37; }
+    .posts .posts__content span.habit {
+      background-color: #F72777; }
+
+.archive-kaisetu .posts__posts {
+  display: flex;
+  max-width: 780px;
+  width: 90%;
+  margin: 30px auto 0;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+.archive-kaisetu .posts__content {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center; }
+  @media (max-width: 768px) {
+    .archive-kaisetu .posts__content {
+      display: block;
+      margin-bottom: 50px; } }
+.archive-kaisetu .posts__thumb-link {
+  width: 25%;
+  margin-right: 30px;
+  display: block;
+  color: #555;
+  text-decoration: none;
+  cursor: pointer; }
+  .archive-kaisetu .posts__thumb-link img {
+    border-radius: 2px 2px 0 0;
+    width: 100%; }
+.archive-kaisetu .posts a {
+  text-decoration: none;
+  color: #333; }
+  @media (max-width: 1024px) {
+    .archive-kaisetu .posts a {
+      font-size: 90%; } }
+  @media (max-width: 768px) {
+    .archive-kaisetu .posts a {
+      font-size: 100%; } }
+  @media (max-width: 768px) {
+    .archive-kaisetu .posts a {
+      width: 100%; } }
+.archive-kaisetu .posts__cat {
+  display: inline-block;
+  background: #595757;
+  overflow: hidden;
+  position: absolute;
+  top: 13px;
+  left: 0;
+  height: 30px;
+  margin: 0;
+  padding: 0 10px;
+  font-size: 15px;
+  font-weight: bold;
+  vertical-align: middle;
+  line-height: 30px;
+  opacity: .9; }
+  @media (max-width: 480px) {
+    .archive-kaisetu .posts__cat {
+      font-size: 13px; } }
+  .archive-kaisetu .posts__cat a {
+    color: #fff; }
+.archive-kaisetu .posts__entry-title {
+  font-size: 20px; }
+  @media (max-width: 768px) {
+    .archive-kaisetu .posts__entry-title {
+      font-size: 18px; } }
+
+/*# sourceMappingURL=style.css.map */

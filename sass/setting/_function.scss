@@ -1,0 +1,13 @@
+@import '../mixin/media';
+
+.pconly {
+    @include mediaQuery-down(tb) {
+      display: none !important;
+    }
+  }
+  
+.tbonly {
+  @include mediaQuery-up(tb) {
+    display: none !important;
+  }
+}

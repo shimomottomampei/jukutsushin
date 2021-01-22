@@ -1,0 +1,236 @@
+.article {
+	width: 95%;
+	max-width: 780px;
+	margin: 50px auto;
+	font-weight: 400;
+	line-height: 1.9;
+
+	h1 {
+		margin-bottom: 15px;
+		font-size: 36px;
+		color: $orange;
+	}
+
+	h2 {
+		margin-bottom: .7em;
+		border-bottom: 1px solid $orange;
+		font-size: 23px;
+		font-weight: 600;
+		color: $orange;
+	}
+
+	h3 {
+		margin: 2em 0 1em;
+		padding-left: 10px;
+		border-left: 3px solid $orange;
+		font-size: 20px;
+		color: $orange;
+		font-weight: 600;
+	}
+
+	h4 {
+		margin: 2em 0 1em;
+		font-size: 20px;
+		color: $orange;
+		font-weight: 600;
+	}
+
+	p {
+		margin-bottom: 1.5em;
+		line-height: 1.9;
+		font-weight: 400;
+		font-size: 17px;
+
+		.big {
+			font-size: 1.5em;
+			font-weight: bold;
+		}
+		.red {
+			font-weight: bold;
+			color: #ee7b7b;
+		}
+	}
+
+	a {
+		font-weight: 400;
+	}
+
+	ul {
+		padding-left: 2em;
+	}
+
+	.tb {
+		width: 100%;
+		height: 0;
+		margin-bottom: 1em;
+		position: relative;
+		padding-top: 56.25%;
+		overflow: hidden;
+
+		iframe {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100% !important;
+			height: 100% !important;
+		}
+
+	}
+
+	blockquote {
+		padding: 1em;
+		border: 1px solid #333;
+	}
+
+	fieldset {
+		background-color: #fff !important;
+		border: 0px !important;
+	}
+
+	.swpm-login-widget-form {
+		@include media(tb) {
+			font-size: 24px;
+		}
+
+		input {
+			@include media(tb) {
+				font-size: 20px;
+			}
+		}
+
+		.swpm-remember-checkbox {
+			input {
+				@include media(tb) {
+					width: 20px;
+					height: 20px;
+				}
+			}
+		}
+	}
+
+	.swpm-section {
+		&.swpm-section-1 {
+			@include media(tb) {
+				font-size: 20px;
+			}
+		}
+	}
+
+	.swpm-section-div {
+		background-color: #fff;
+		padding: 0px;
+		width: 100%;
+
+		@include media(tb) {
+			font-size: 24px;
+		}
+	}
+
+	.swpm-form-builder {
+		.swpm-legend {
+			h3 {
+				@include media(tb) {
+					font-size: 28px;
+				}
+			}
+		}
+
+		.swpm-section-div {
+			h4 {
+				display: none;
+			}
+		}
+	}
+
+	input,
+	input[type="text"],
+	input[type="tel"],
+	input[type="email"] {
+		&.swpm-medium {
+			@include media(tb) {
+			    font-size: 24px;
+				width: 100%;
+				padding: 5px 10px;
+				box-sizing: border-box;
+			}
+		}
+	}
+
+	.swpm-span {
+		p {
+			margin-bottom: 0;
+			font-size: 12px;
+
+			@include media(tb) {
+				font-size: 20px;
+			}
+		}
+	}
+
+	.swpm-submit, input[type="submit"].swpm-submit {
+		@include media(tb) {
+			font-size: 24px;
+		}
+	}
+
+	.swpm-login-widget-logged {
+		@include media(tb) {
+			font-size: 22px;
+		}
+	}
+
+	&__thumb img {
+		max-width: 300px;
+		margin: 0 auto 30px;
+		display: block;
+	}
+
+	&__date {
+		margin-bottom: 15px;
+		text-align: right;
+
+		span {
+			color: #FFF;
+			background: $orange;
+			padding: 4px 10px;
+		}
+
+		span.evening {
+			background: #333;
+		}
+	}
+
+	&__actor {
+
+		p {
+			margin-bottom: 0;
+		}
+		a {
+			margin: 0;
+			color: #333;
+			text-decoration: none;
+			font-weight: 400;
+		}
+		i {
+			color: #333;
+			margin: 0 3px 0 10px;
+		}
+
+		.tag {
+			border: 1px solid #CCC;
+			border-radius: 4px;
+			padding: 4px 10px;
+			margin: 0 2px;
+		}
+
+	}
+
+
+	img {
+		max-width: 100%;
+	}
+	.wp-block-image img {
+		height: auto;
+	}
+
+}

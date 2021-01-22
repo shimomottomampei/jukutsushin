@@ -1,0 +1,25 @@
+.single-radio {
+	.article__thumb img {
+		max-width: 100%;
+	}
+
+	.audio-options {
+		display: flex;
+		justify-content: space-around;
+		.playing-rate {
+			text-align: center;
+			width: 40%;
+			background: #f1f3f4;
+			border-radius: 10px;
+			cursor: pointer;
+		}
+		.audio__btn {
+			color: #fff;
+			width: 40%;
+			background: $orange;
+			text-decoration: none;
+			text-align: center;
+			border-radius: 10px;
+		}
+	}
+}

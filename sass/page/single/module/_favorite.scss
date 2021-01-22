@@ -1,0 +1,18 @@
+.favorite {
+	text-align: right;
+	margin-bottom: 50px;
+
+	.simplefavorite-button {
+		border: 1px solid $orange;
+		padding: 4px 10px;
+		color: $orange;
+		cursor: pointer;
+
+		&.active {
+			background: $orange;
+			color: #fff;
+			opacity: 1;
+		}
+	}
+
+}

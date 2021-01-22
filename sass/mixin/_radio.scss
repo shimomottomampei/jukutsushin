@@ -1,0 +1,33 @@
+@mixin radio {
+	&__posts {
+		max-width: 900px;
+	}
+	&__date {
+		background: #4d4d4d;
+		padding: 4px 10px;
+		color: #fff;
+
+		&.-morning {
+			background: $orange;
+		}
+
+		&.-evening {
+			background: $gray;
+		}
+	}
+
+	&__thumb-link {
+		flex-basis: 250px;
+		flex-shrink: 0;
+
+		@include mediadown(tb) {
+			width: 100%;
+		}
+	}
+	&__right {
+		flex-grow: 1;
+	}
+	&__entry-title {
+		margin: 8px 0 0 0;
+	}
+}

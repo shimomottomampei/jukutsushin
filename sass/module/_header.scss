@@ -1,0 +1,166 @@
+.header {
+	background: $orange;
+	margin-bottom: 50px;
+	padding: 15px 0;
+	color: #FFF;
+	font-size: 12px;
+
+	&__flex {
+		display: flex;
+		max-width: 1000px;
+		margin: 0 auto;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&__submenu {
+		width: 50%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		@include mediadown(tb) {
+		    /*width: 56%;*/
+		    margin-right: 2%;
+	        justify-content: flex-end;
+		}
+
+		@include mediadown(sm) {
+		    width: 56%;
+		}
+	}
+
+	&__logo {
+		font-size: 50px;
+		line-height: 1;
+		@include column();
+
+		@include mediadown(md) {
+		    margin-left: 2%;
+		}
+
+		a {
+			color: #fff;
+			text-decoration: none;
+
+			@include mediadown(md) {
+				font-size: 30px;
+			}
+
+			@include mediadown(sm) {
+				font-size: 26px;
+			}
+			
+		}
+
+		span {
+			font-size: 20px;
+
+			@include mediadown(md) {
+				font-size: 16px;
+			}
+		}
+	}
+
+	&__icon {
+		@include column();
+		align-items: center;
+		height: 60px;
+
+		@include mediadown(tb) {
+			height: 40px;
+			padding: 0 5px;
+		}
+
+		a {
+			color: #FFF;
+			text-decoration: none;
+			font-size: 7px;
+		}
+
+		.img {
+			height: 50px;
+			display: flex;
+			align-items: center;
+		}
+
+		&._fav {
+
+			@include mediadown(tb) {
+			    display: none;
+			}
+
+			img {
+				height: 34px;
+			}
+		}
+		&._mypage {
+			img {
+				height: 39px;
+				@include media(sm) {
+					height: 31px;
+				}		
+			}
+
+			.str {
+				@include mediadown(tb) {
+				    display: none;
+				}
+			}
+		}
+		&._menu {
+			img {
+				height: 23px;
+				@include media(sm) {
+					height: 20px;
+				}		
+			}
+
+			.str {
+				@include mediadown(tb) {
+				    display: none;
+				}
+			}
+		}
+	}
+
+	&__menulist {
+		background-color: #fff;
+		border: 2px dashed $orange;
+		border-radius: 20px;
+		padding: 20px 20px 20px;
+		margin: 53px 10px;
+		position: absolute;
+		top: 0;
+		display: none;
+
+		@include mediadown(md) {
+			right: 0;
+		}
+	
+		&._open {
+			display: block;
+			/*right: 0;*/
+		}
+
+		a {
+			font-weight: bold;
+			font-size: 20px;
+			/*color: #000;*/
+			color: $orange;
+		    text-decoration: none;
+		}
+	}
+
+	&__close {
+	    position: absolute;
+	    top: 5px;
+	    right: 15px;
+	    padding: 5px;
+
+	    i {
+			color: red;
+			font-size: 25px;
+	    }
+	}
+}

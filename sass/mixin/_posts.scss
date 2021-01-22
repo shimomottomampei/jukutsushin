@@ -1,0 +1,88 @@
+@mixin posts() {
+
+	&__posts {
+		display: flex;
+		max-width: 780px;
+		width: 90%;
+		margin: 30px auto 0;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+
+	&__content {
+		position: relative;
+		width: 100%;
+		display: flex;
+		align-items: center;
+
+		@include mediadown(tb) {
+		    display: block;
+		    margin-bottom: 50px;
+		}
+	}
+
+	&__thumb-link {
+		width: 25%;
+		margin-right: 30px;
+		display: block;
+	    color: #555;
+	    text-decoration: none;
+	    cursor: pointer;
+
+		img {
+		    border-radius: 2px 2px 0 0;
+		    width: 100%;
+		}
+	}
+
+	a {
+		text-decoration: none;
+		color: #333;
+
+		@include media(md) {
+			font-size: 90%;
+		}
+
+		@include media(tb) {
+			font-size: 100%;
+		}
+
+		@include mediadown(tb) {
+			width: 100%;
+		}
+	}
+
+	&__cat {
+	    display: inline-block;
+	    background: #595757;
+	    overflow: hidden;
+	    position: absolute;
+	    top: 13px;
+	    left: 0;
+	    height: 30px;
+	    margin: 0;
+	    padding: 0 10px;
+	    font-size: 15px;
+	    font-weight: bold;
+	    vertical-align: middle;
+	    line-height: 30px;
+	    opacity: .9;
+
+	    @include media(sm) {
+	    	font-size: 13px;
+	    }
+
+	    a {
+	    	color: #fff;
+	    }
+	}
+
+	&__entry-title {
+		font-size: 20px;
+
+		@include media(tb) {
+			font-size: 18px;
+		}
+	}
+
+}

@@ -1,0 +1,7 @@
+.related {
+	margin-top: 50px;
+	
+	&__border {
+		@include border();
+	}
+}

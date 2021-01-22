@@ -1,0 +1,48 @@
+.posts {
+	@include posts();
+
+	margin-bottom: 100px;
+
+/* 	&__posts::before{
+		content: "";
+		display: block;
+		width: 23%;
+		order: 1;
+		@include media(tb) {
+			display: none;
+		}
+	}
+	&__posts::after{
+		content: "";
+		display: block;
+		width: 23%;
+		@include media(tb) {
+			display: none;
+		}
+	}
+ */
+	&__content {
+		margin-bottom: 30px;
+	}
+
+	&__title {
+		width: 70%;
+
+		@include media(tb) {
+			width: 100%;
+		}
+	}
+
+	h1 {
+//		@include border();
+		color: $orange;
+		text-align: center;
+		font-size: 30px;
+	}
+}
+
+.archive-radio .posts {
+	@include posts();
+	@include radio();
+
+}

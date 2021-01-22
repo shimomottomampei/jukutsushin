@@ -1,0 +1,23 @@
+@mixin border() {
+    display: flex;
+    align-items: center;
+    letter-spacing: 6px;
+    font-size: 30px;
+    color: $orange;
+
+    @include media(tb) {
+        font-size: 25px;
+    }
+
+    &:after {
+	    content: "";
+	    height: 1px;
+	    flex-grow: 1;
+	    background-color: $orange;
+    }
+
+    &:before {margin-right: 1rem;}
+
+    &:after {margin-left: 1rem;}
+}
+

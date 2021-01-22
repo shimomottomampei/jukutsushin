@@ -1,0 +1,40 @@
+.key {
+	max-width: 1330px;
+	width: 40%;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 18px;
+	@include media(lg) {
+		width: 90%;
+	}
+
+	&__word {
+		display: flex;
+		justify-content: space-around;
+		margin-top: 10px;
+
+		@include media(lg) {
+			justify-content: flex-start;
+			flex-wrap: wrap;
+		}
+
+		li {
+			border: 1px solid #333;
+			border-radius: 5px;
+			padding: 3px 10px;
+			list-style-type: none;
+			min-width: 100px;
+			letter-spacing: 6px;
+			margin: 0 5px;
+
+			@include media(tb) {
+				margin-bottom: 10px;
+			}
+			a {
+				text-decoration: none;
+				color: #333;
+			}
+		}
+	}
+
+}

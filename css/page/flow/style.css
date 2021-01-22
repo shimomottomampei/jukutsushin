@@ -1,0 +1,180 @@
+/* line 12, ../../../scss/page/flow/style.scss */
+#p380 .flex {
+  display: flex;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  /* line 12, ../../../scss/page/flow/style.scss */
+  #p380 .flex {
+    display: block;
+  }
+}
+/* line 20, ../../../scss/page/flow/style.scss */
+#p380 .video {
+  width: 100%;
+  height: 0;
+  position: relative;
+  padding-top: 56.25%;
+  overflow: hidden;
+  width: 550px;
+  padding-top: 30%;
+  flex-shrink: 0;
+  max-width: 100%;
+}
+/* line 8, ../../../scss/mixin/_video.scss */
+#p380 .video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+@media (max-width: 1024px) {
+  /* line 20, ../../../scss/page/flow/style.scss */
+  #p380 .video {
+    padding-top: 56.25%;
+    margin-bottom: 2rem;
+  }
+}
+/* line 33, ../../../scss/page/flow/style.scss */
+#p380 .article {
+  max-width: 1000px;
+}
+/* line 36, ../../../scss/page/flow/style.scss */
+#p380 .article img {
+  height: auto;
+}
+/* line 41, ../../../scss/page/flow/style.scss */
+#p380 .step1 img {
+  width: 150px;
+}
+@media (max-width: 768px) {
+  /* line 41, ../../../scss/page/flow/style.scss */
+  #p380 .step1 img {
+    display: block;
+    margin: 0 auto;
+  }
+  /* line 46, ../../../scss/page/flow/style.scss */
+  #p380 .step1 img.wp-image-391 {
+    box-shadow: 3px 3px 4px 0px grey;
+  }
+}
+@media (max-width: 1024px) {
+  /* line 52, ../../../scss/page/flow/style.scss */
+  #p380 .step2 {
+    display: block;
+  }
+  /* line 55, ../../../scss/page/flow/style.scss */
+  #p380 .step2 .video {
+    width: 100%;
+  }
+}
+/* line 59, ../../../scss/page/flow/style.scss */
+#p380 .step2 .flex {
+  justify-content: space-between;
+}
+/* line 61, ../../../scss/page/flow/style.scss */
+#p380 .step2 .flex .flex-part {
+  width: 33%;
+  color: #e55608;
+  font-size: 13px;
+}
+@media (max-width: 768px) {
+  /* line 61, ../../../scss/page/flow/style.scss */
+  #p380 .step2 .flex .flex-part {
+    width: 50%;
+    margin: 1.5rem auto 0;
+    font-size: 1rem;
+  }
+}
+/* line 69, ../../../scss/page/flow/style.scss */
+#p380 .step2 .flex .flex-part div {
+  width: 100%;
+  margin-top: -1em;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+@media (max-width: 1024px) {
+  /* line 79, ../../../scss/page/flow/style.scss */
+  #p380 .step3 {
+    display: block;
+  }
+  /* line 82, ../../../scss/page/flow/style.scss */
+  #p380 .step3 .video {
+    width: 100%;
+  }
+}
+/* line 88, ../../../scss/page/flow/style.scss */
+#p380 .step3 div div span {
+  width: 33%;
+  color: #e55608;
+  font-size: 13px;
+}
+/* line 92, ../../../scss/page/flow/style.scss */
+#p380 .step3 img {
+  width: 33%;
+}
+/* line 96, ../../../scss/page/flow/style.scss */
+#p380 .step3 .right {
+  flex-grow: 1;
+}
+/* line 98, ../../../scss/page/flow/style.scss */
+#p380 .step3 .right .right-part {
+  color: #e55608;
+}
+@media (max-width: 768px) {
+  /* line 98, ../../../scss/page/flow/style.scss */
+  #p380 .step3 .right .right-part {
+    width: 50%;
+    margin: 0 auto;
+  }
+  /* line 103, ../../../scss/page/flow/style.scss */
+  #p380 .step3 .right .right-part img {
+    width: 100%;
+  }
+}
+/* line 107, ../../../scss/page/flow/style.scss */
+#p380 .step3 .right .right-part div {
+  width: 100%;
+  margin-top: -1em;
+  font-size: 1rem;
+}
+/* line 116, ../../../scss/page/flow/style.scss */
+#p380 .step5 {
+  justify-content: space-around;
+}
+/* line 119, ../../../scss/page/flow/style.scss */
+#p380 .step5 .orange {
+  color: #e55608;
+  font-size: 19px;
+  font-weight: 700;
+}
+/* line 125, ../../../scss/page/flow/style.scss */
+#p380 .step5 img {
+  width: 170px;
+}
+/* line 129, ../../../scss/page/flow/style.scss */
+#p380 .step5 div p {
+  margin-bottom: 0;
+}
+@media (max-width: 768px) {
+  /* line 128, ../../../scss/page/flow/style.scss */
+  #p380 .step5 div {
+    margin-bottom: 2rem;
+  }
+  /* line 133, ../../../scss/page/flow/style.scss */
+  #p380 .step5 div p {
+    line-height: 1.5;
+  }
+}
+/* line 141, ../../../scss/page/flow/style.scss */
+#p380 h2 {
+  margin: 40px 0 15px;
+}
+/* line 145, ../../../scss/page/flow/style.scss */
+#p380 h4 {
+  background: #e55608;
+  color: #fff;
+  padding: 4px 10px;
+  margin: 0 0 15px;
+}
