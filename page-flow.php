@@ -57,7 +57,7 @@
       <div class="flex-part">
         <img
           class="alignnone size-full wp-image-393"
-          src="https://mrstepup-radio.com/dl/2020/11/限界突破.jpg"
+          src="https://mrstepup-radio.com/dl/2020/11/大逆転.jpg"
           alt=""
           width="600"
           height="799"
@@ -67,7 +67,7 @@
       <div class="flex-part">
         <img
           class="alignnone size-full wp-image-394"
-          src="https://mrstepup-radio.com/dl/2020/11/習慣本.jpg"
+          src="https://mrstepup-radio.com/dl/2020/11/限界突破.jpg"
           alt=""
           width="600"
           height="712"
@@ -80,7 +80,7 @@
       <div class="flex-part">
         <img
           class="alignnone size-full wp-image-395"
-          src="https://mrstepup-radio.com/dl/2020/11/大逆転.jpg"
+          src="https://mrstepup-radio.com/dl/2020/11/習慣本.jpg"
           alt=""
           width="600"
           height="789"
@@ -106,10 +106,11 @@
     <div class="right-part">
       <img
         class="alignnone size-full wp-image-393"
-        src="https://mrstepup-radio.com/dl/2020/11/限界突破.jpg"
+        src="https://mrstepup-radio.com/dl/2020/11/techo.png"
         alt=""
         width="600"
         height="799"
+        style="width:50%;"
       />
       <div>必読</div>
     </div>
